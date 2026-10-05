@@ -9,6 +9,11 @@ Firmware that turns an M5Stack **Cardputer ADV** into a mouse jiggler. It moves 
 - Battery friendly: 80 MHz CPU and automatic screen off
 - In USB mode, nothing is sent while the computer sleeps, so the jiggler never wakes it
 
+<p>
+  <img src="docs/screenshots/active.png" alt="Main screen while jiggling" width="360">
+  <img src="docs/screenshots/paused.png" alt="Main screen while paused" width="360">
+</p>
+
 ## Installing
 
 ### With Launcher (SD card)
@@ -81,6 +86,11 @@ Type to edit. `Del` erases, `Enter` saves and `ESC` cancels.
 
 ## Settings
 
+<p>
+  <img src="docs/screenshots/settings1.png" alt="Settings: connection, device name, pattern, interval, randomize" width="360">
+  <img src="docs/screenshots/settings2.png" alt="Settings: screen off, brightness, start on boot, forget BLE pairings" width="360">
+</p>
+
 | Setting | Options | Default |
 |---|---|---|
 | Connection | USB · BLE · USB+BLE *(applies after restart)* | USB+BLE |
@@ -96,7 +106,11 @@ Type to edit. `Del` erases, `Enter` saves and `ESC` cancels.
 | Firmware | Installed version | |
 | GitHub | Project author | |
 
-Settings are saved to flash and kept across reboots and firmware updates. When a connection or name change is waiting for a restart, the main screen shows **! Restart to apply**.
+Settings are saved to flash and kept across reboots and firmware updates. When a connection or name change is waiting for a restart, the main screen shows **! Restart to apply**, and leaving the settings asks whether to restart now:
+
+<p>
+  <img src="docs/screenshots/restart.png" alt="Restart confirmation dialog" width="360">
+</p>
 
 After you rename the device, the computer may keep showing the old Bluetooth name. Remove the device in its Bluetooth settings and pair again.
 
