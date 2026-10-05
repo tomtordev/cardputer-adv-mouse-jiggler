@@ -34,12 +34,7 @@ If the upload can't find the board, switch it **off**, hold **G0**, plug in the 
 
 ### Build output
 
-Every `pio run` writes two files to `dist/`:
-
-| File | Use |
-|---|---|
-| `MouseJiggler-CardputerADV-<version>.bin` | Merged image (bootloader, partitions and app) for Launcher, M5Burner or web flashers |
-| `MouseJiggler-CardputerADV-<version>-app.bin` | App only, for tools that want just the application |
+Every `pio run` writes `MouseJiggler-CardputerADV-<version>.bin` to `dist/`. It is a merged image (bootloader, partitions and app) that Launcher, M5Burner and web flashers accept.
 
 ## Connecting
 
